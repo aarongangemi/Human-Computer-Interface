@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #00283D;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hciassignment.LoginController">
+   <children>
+      <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="785.0" layoutY="513.0" onMouseClicked="#ClearPassword" prefHeight="39.0" prefWidth="334.0" style="-fx-background-color: #c4c4c4;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="987.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Weechat_logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="764.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/logo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="35.0" layoutX="793.0" layoutY="514.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/baseline_lock_black_18dp.png" />
+         </image>
+      </ImageView>
+      <CheckBox layoutX="796.0" layoutY="574.0" mnemonicParsing="false" selected="true" text="Remember Me" textFill="WHITE" />
+      <Text fx:id="forgotLink" fill="WHITE" layoutX="958.0" layoutY="587.0" onMouseClicked="#ForgotDetails" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot Username/Password" underline="true" />
+      <Button fx:id="accountBtn" layoutX="780.0" layoutY="631.0" mnemonicParsing="false" onAction="#clickCreateAccount" prefHeight="50.0" prefWidth="157.0" style="-fx-background-color: #a0a0a0;" text="Create an Account" />
+      <Button fx:id="loginBtn" layoutX="1004.0" layoutY="630.0" mnemonicParsing="false" onAction="#clickLogin" prefHeight="50.0" prefWidth="157.0" style="-fx-background-color: #26FBBB;" text="Login" />
+      <TextField fx:id="usernameField" alignment="CENTER" layoutX="785.0" layoutY="436.0" onMouseClicked="#clickUsernameField" prefHeight="39.0" prefWidth="334.0" style="-fx-background-color: #C4C4C4;" text="Enter Username*" />
+      <ImageView fitHeight="39.0" fitWidth="35.0" layoutX="792.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/baseline_account_circle_black_18dp.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="PasswordLabel" layoutX="904.0" layoutY="524.0" onMouseClicked="#ClearPassword" text="Enter Password*" />
+   </children>
+</AnchorPane>
